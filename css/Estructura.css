@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+}
+
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+.libre-baskerville-regular-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+  
+.nunito {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-y: hidden; 
+    /* padding: 0; */
+}
+
+header {
+    background-color: #DDD0C8;
+    color: #323232;
+    text-align: center;
+    padding: 1.5em 0;
+}
+
+.imgNombre{
+    width: 200px;
+    height: auto;
+    margin-top:  15px;
+    margin-bottom: 10px;
+}
+
+h2{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal; 
+}
+
+
+p{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+nav {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 0.1em;
+}
+
+/* Estilo para todos los enlaces dentro del nav */
+/* Asegura que todos los enlaces dentro del nav tengan el mismo estilo */
+nav a.nav-link,
+nav .navbar-brand {
+    font-family: Arial, sans-serif;  /* Tipo de letra */
+    font-size: 1.2em;  /* Tamaño de la fuente */
+    text-decoration: none;  /* Eliminar subrayado */
+    color: white;  /* Color del texto */
+    padding: 10px 15px;  /* Espaciado alrededor del texto */
+    display: inline-block;  /* Asegura que los enlaces se alineen horizontalmente */
+}
+
+/* Estilo para los enlaces dentro del dropdown (Temas) */
+nav .nav-item.dropdown .nav-link {
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    color: white;
+}
+
+/* Opción adicional para cambiar el color cuando se pasa el cursor (hover) */
+nav a.nav-link:hover,
+nav .navbar-brand:hover {
+    color: #5c2d91;  /* Color violeta al pasar el ratón */
+    background-color: #f4f4f4;  /* Fondo claro cuando el ratón pasa */
+    border-radius: 5px;  /* Bordes redondeados */
+}
+
+/* Si quieres personalizar aún más el enlace del menú desplegable */
+nav .dropdown-toggle:hover {
+    color: #ffffff;  /* Cambia el color al pasar el cursor */
+    background-color: transparent;  /* Mantén el fondo transparente */
+}
+
+
+.custom-dropdown-toggle {
+    background-color: #6f42c1;
+    color: white;
+}
+
+.navbar-custom .navbar-brand{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.navbar-custom .nav-link {
+    color: white !important;
+    background-color: #333 !important;
+    padding-left: 12px;
+    padding-right: 20px;
+}
+
+.nav-link{
+    font-size: 1.2em;
+    transition: font-size 0.3s ease;
+}
+
+
+aside {
+    background-color: #f4f4f4;
+    padding: 15px;
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+}
+
+
+aside h2{
+    margin-top: 50px;
+    margin-left: 55px;
+}
+aside p{
+    margin:0 55px;
+    font-weight: 100;
+}
+
+
+.content {
+    min-height: calc(100vh - 100vh) ; /* Altura mínima: 100vh - altura de header y footer */
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    padding: 15px;
+    width: 70%;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    clear: both;
+    margin-top: 4em;
+}
+
+
+footer p {
+    font-family: "Nunito", sans-serif;
+    color: #fff; /* Cambiar color del texto */
+    font-size: 18px; /* Cambiar tamaño de fuente */
+    text-align: center; /* Centrar el texto */
+    padding-top: 20px ;   /* Agregar relleno */
+    padding-bottom: 10px;
+}
+
+/* Para dispositivos pequeños */
+@media (max-width: 768px) {
+    aside, section {
+        width: 100%;
+        float: none;
+    }
+}

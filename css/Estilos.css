@@ -1,0 +1,73 @@
+.container {
+    /* gap: 15px;
+    padding: 15px;
+    width: 400px; */
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr) ; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em; 
+    padding: 1em; 
+    height: 400px;
+    margin: 0 auto;
+    max-width: 1200px; 
+    height: 400px;
+}
+
+/* section img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px; /* Para redondear las esquinas de las imágenes 
+} */
+
+.carousel-container {
+    flex: 1 1 70%;
+    max-width: 70%;
+}
+
+/* Asegura que el carrusel y sus elementos internos también ocupen el 100% de su contenedor */
+.carousel,
+.carousel-inner,
+.carousel-item {
+    height: 100%;
+}
+
+/* Establece que las imágenes del carrusel cubran todo el espacio disponible */
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.custom-container {
+    margin: 0 auto;
+    padding-top: 2.5em;
+    max-width: 90%;
+}
+
+/* img.col{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    padding-top: 0px;
+    padding-bottom: 15px;
+}
+ */
+
+/* Estilo responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container{
+        padding: 10px;
+    }
+
+    .carousel-container{
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container{
+        padding: 5px;
+    }
+}
